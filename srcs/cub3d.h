@@ -15,7 +15,7 @@
 
 # include <math.h>
 # include <fcntl.h>
-# include "mlx.h"
+# include "../mlx/mlx.h"
 # include "libft.h"
 # include "bmp.h"
 

@@ -72,7 +72,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(LIB_MAKER) $(LIB_DIR)
 	$(LIB_MAKER) mlx
-	clang -o $(NAME) -I srcs  $(OBJS) -Lmlx -lmlx -Llibft -lft -lm -lbsd -lX11 -lXext $(FLAGS)
+	clang -o $(NAME) $(OBJS) -Lmlx -lmlx -Llibft -lft -lm -lbsd -lX11 -lXext $(FLAGS)
 
 clean: 
 	$(LIB_MAKER) $(LIB_DIR) clean
